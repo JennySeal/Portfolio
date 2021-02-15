@@ -1,0 +1,139 @@
+*               {margin: 0;
+                padding: 0;
+                box-sizing: border-box;}
+
+body            {background-color: #e8e7e5;
+                width: 100%;
+                min-height:100vh;}
+
+header          {background-color: #e8e7e5;
+                width: 100%;}
+
+nav             {font-family: 'Heebo';
+                font-size: 1em;
+                line-height: 0.75;
+                margin-left: 4%;
+                padding-top: 1%;
+                background-color: #e8e7e5;
+                color:#d93527;}
+
+nav a           {text-decoration: none;
+                color: #d93527;
+                margin-right: 2%;}
+
+nav a:hover     {color: #ffb227;}
+
+header h1       {font-family: 'Cabin Sketch';
+                text-align: right;
+                font-weight:700;
+                font-size: 3.5em;
+                float: right;
+                background-color: #e8e7e5;
+                line-height: 1em;}
+
+nav h2          {line-height: 1.5em;
+                color: #fbb126;
+                font-size: 2em;
+                font-weight: bold;
+                font-family: 'Cabin Sketch';}
+
+#bannerSpan     {color: #d93527;}
+
+#banner         {width: 100%;}
+
+#MissMon        {width: 100%;
+                padding-top: 1%;
+                border-bottom: 8px solid #d93527;
+                margin-bottom: 1%;}
+
+#aboutText      {background-color:#e8e7e5; 
+                font-family: 'Heebo';
+                text-align: justify;
+                float: right;   
+                width: 45%;
+                overflow:visible;
+                margin-right: 4%;}
+
+#contactText   {background-color:#e8e7e5; 
+                font-family: 'Heebo';
+                width: 50%;
+                margin-left:3%;}
+
+#contactText a  {color: #d93527;}
+
+.circleContainer {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-evenly;
+                align-items:center;
+                width: 50%;
+                float: left;}
+
+#circleOne      {height: 275px;
+                width: 275px;
+                border-radius: 50%;
+                background-color: #d93527;
+                background-size: cover;
+                margin-bottom: 1%;}
+
+#circleTwo      {height: 275px;
+                width: 275px;
+                border-radius: 50%;
+                background-color: 
+                #d93527;
+                background-image: url("flowers.JPG");
+                background-size: 100%;
+                margin-bottom: 1%;}
+
+#circleThree    {height: 275px;
+                width: 275px;
+                border-radius: 50%;
+                background-color:#ffb227;
+                background-image: url("books.JPG");
+                background-size:cover;
+                margin-bottom: 1%;}
+
+#circleFour     {height: 275px;
+                width: 275px;
+                border-radius: 50%;
+                background-color:#ffb227;
+                background-size:cover;
+                margin-bottom: 1%;}
+
+footer          {clear: both;
+                font-family: Heebo;
+                font-size: 0.8em;
+                width: 100%;
+                bottom:0;
+                position:relative;
+                text-align: right;
+                border-top: 8px solid #d93527;
+                background-color: #e8e7e5;}
+                
+@media only screen and (max-width: 1200px){
+#circleOne      {display: none;}
+}
+
+@media only screen and (max-width: 1000px){
+#circleOne, #circleTwo 
+                {display: none;}
+}
+
+@media only screen and (max-width: 600px){
+header h1       {padding-top: 0.67em;
+                font-size: 2em;}
+
+header h2       {font-size: 1em;}
+
+#aboutText      {width: 90%;
+                margin: 5%;}
+
+#circleTwo, #circleThree 
+                {display:none;}
+#circleContainer{width: 100%;
+                justify-content: center;}
+#circleOne, #circleFour
+                {width: 200px;
+                height: 200px;}
+}
